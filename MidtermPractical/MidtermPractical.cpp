@@ -21,22 +21,16 @@ int main()
     for (int i = 0; i < 4; i++)
     {
         if (rng == i)
-        {
             printQuestion(questions[rng]);
-        }
     }
 
     std::cout << "\n\n1)True\n2)False\n\nChoice: \n";
     std::cin >> ans;
 
     if (ans == 1)
-    {
         std::cout << "That's correct!\n\n";
-    }
     else if (ans == 2)
-    {
         std::cout << "That's incorrect.\n\n";
-    }
     else
         std::cout << "The format of your answer is unacceptable";
 }
